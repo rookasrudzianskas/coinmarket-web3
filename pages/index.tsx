@@ -2,9 +2,9 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import CMCtable from '../components/cmc-table/cmcTable'
-import Header from '../components/header'
-import Trending from '../components/trending'
-import SwapCryptoModal from '../components/swapCryptoModal'
+import Header from '../components/Header'
+import Trending from '../components/Trending'
+import SwapCryptoModal from '../components/SwapCryptoModal'
 
 const Home: NextPage = () => {
   return (
@@ -14,7 +14,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-        <div className='min-h-screen'>
+        <div className='min-h-screen overflow-x-hidden'>
             <Header />
             <SwapCryptoModal />
             <div className='mt-10' />
