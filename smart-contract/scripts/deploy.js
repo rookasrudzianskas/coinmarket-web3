@@ -1,7 +1,11 @@
 const main = async () => {
+        // this will get contract by it is name
         const dogeFactory = await hre.ethers.getContractFactory('DogeCoin')
+        // this will deploy contract
         const dogeContract = await dogeFactory.deploy()
+        // this will wait until contract is deployed
         await dogeContract.deployed()
+        // this will print contract address
         console.log('Dogecoin deployed to:', dogeContract.address)
 
         const linkFactory = await hre.ethers.getContractFactory('Link')
