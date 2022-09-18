@@ -14,4 +14,4 @@ const Rate = ({ isIncrement, rate }) => {
     </div>
 }
 
-export default Rate
+export default Rate;

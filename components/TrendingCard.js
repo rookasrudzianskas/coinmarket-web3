@@ -38,4 +38,4 @@ const TrendingCard = ({ icon, title, trendingData }) => {
     )
 }
 
-export default TrendingCard
+export default TrendingCard;

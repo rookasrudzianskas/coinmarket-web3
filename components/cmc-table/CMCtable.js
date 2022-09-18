@@ -64,4 +64,4 @@ const CMCtable = () => {
     )
 }
 
-export default CMCtable
+export default CMCtable;
