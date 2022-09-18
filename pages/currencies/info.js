@@ -31,11 +31,11 @@ const Currencies = () => {
 
     const getData = async () => {
         const queryString = window.location.search
-        const urlParams = new URLSearchParams(queryString)
+        const urlParams = new URLSearchParams(queryString);
 
-        setCoinName(urlParams.get('coin'))
-        setPrice(Number(urlParams.get('price')).toLocaleString())
-        setCoinSymbol(urlParams.get('symbol'))
+        setCoinName(urlParams.get('coin'));
+        setPrice(Number(urlParams.get('price')).toLocaleString());
+        setCoinSymbol(urlParams.get('symbol'));
     }
 
     return (
