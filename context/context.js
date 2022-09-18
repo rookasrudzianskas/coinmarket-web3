@@ -31,8 +31,8 @@ export const CoinMarketProvider = ({ children }) => {
 
     useEffect(() => {
         if (isAuthenticated) {
-            const account = user.get('ethAddress')
-            setCurrentAccount(account)
+            const account = user.get('ethAddress');
+            setCurrentAccount(account);
         }
     }, [isAuthenticated]);
 
