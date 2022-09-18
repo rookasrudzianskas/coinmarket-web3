@@ -16,25 +16,25 @@ import {
 export const CoinMarketContext = createContext()
 
 export const CoinMarketProvider = ({ children }) => {
-    const { isAuthenticated, user, Moralis } = useMoralis()
+    const { isAuthenticated, user, Moralis } = useMoralis();
     const {
         data: coins,
         error,
         isLoading: loadingCoins,
-    } = useMoralisQuery('Coins')
+    } = useMoralisQuery('Coins');
 
-    const [currentAccount, setCurrentAccount] = useState('')
-    const [openBuyCryptoModal, setOpenBuyCryptoModal] = useState(false)
-    const [fromToken, setFromToken] = useState('ETH')
-    const [toToken, setToToken] = useState('')
-    const [amount, setAmount] = useState('')
+    const [currentAccount, setCurrentAccount] = useState('');
+    const [openBuyCryptoModal, setOpenBuyCryptoModal] = useState(false);
+    const [fromToken, setFromToken] = useState('ETH');
+    const [toToken, setToToken] = useState('');
+    const [amount, setAmount] = useState('');
 
     useEffect(() => {
         if (isAuthenticated) {
             const account = user.get('ethAddress')
             setCurrentAccount(account)
         }
-    }, [isAuthenticated])
+    }, [isAuthenticated]);
 
     const getContractAddress = () => {
         if (fromToken === 'Dai') return daiAddress
@@ -58,7 +58,7 @@ export const CoinMarketProvider = ({ children }) => {
     }
 
     const openModal = () => {
-        setOpenBuyCryptoModal(true)
+        setOpenBuyCryptoModal(true);
     }
 
     //Mint function for the token with send ether to the contract
