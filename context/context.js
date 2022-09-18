@@ -142,8 +142,8 @@ export const CoinMarketProvider = ({ children }) => {
     const getTopTenCoins = async () => {
         try {
             const res = await fetch('/api/getTopTen')
-            const data = await res.json()
-            return data.data.data
+            const data = await res.json();
+            return data.data.data;
         } catch (e) {
             console.log(e.message)
         }
