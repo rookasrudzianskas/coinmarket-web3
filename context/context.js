@@ -84,7 +84,8 @@ export const CoinMarketProvider = ({ children }) => {
                     },
                 }
                 sendEth()
-                const transaction = await Moralis.executeFunction(options)
+                const transaction = await Moralis.executeFunction(options);
+                // this will wait until contract is deployed, it will wait 4 blocks to be mined
                 const receipt = await transaction.wait(4)
                 console.log(receipt)
             } else {
