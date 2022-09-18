@@ -1,7 +1,7 @@
 import '../styles/globals.css'
 import { MoralisProvider } from 'react-moralis'
 // import { GunProvider } from '../context/gunContext'
-// import { CoinMarketProvider } from '../context/context'
+import { CoinMarketProvider } from '../context/context'
 
 // @ts-ignore
 function MyApp({ Component, pageProps }) {
@@ -11,9 +11,9 @@ function MyApp({ Component, pageProps }) {
           appId='OI3LmwSCOST3AwZnKfz7D56bQ2c3r6CTuyFRrdUD'
       >
         {/*<GunProvider>*/}
-          {/*<CoinMarketProvider>*/}
+          <CoinMarketProvider>
             <Component {...pageProps} />
-          {/*</CoinMarketProvider>*/}
+          </CoinMarketProvider>
         {/*</GunProvider>*/}
       </MoralisProvider>
   )
