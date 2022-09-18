@@ -132,16 +132,16 @@ export const CoinMarketProvider = ({ children }) => {
     const sendEth = async () => {
         if (!isAuthenticated) return;
         // this will get contract by it is name
-        const contractAddress = getToAddress()
+        const contractAddress = getToAddress();
 
         let options = {
             type: 'native',
             amount: Moralis.Units.ETH('0.01'),
             receiver: contractAddress,
         }
-        const transaction = await Moralis.transfer(options)
-        const receipt = await transaction.wait()
-        console.log(receipt)
+        const transaction = await Moralis.transfer(options);
+        const receipt = await transaction.wait();
+        console.log(receipt);
     }
 
     const getTopTenCoins = async () => {
