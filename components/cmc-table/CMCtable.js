@@ -31,20 +31,6 @@ const CMCtable = () => {
     return (
         <div className='text-white font-bold'>
             <div className='mx-auto max-w-screen-2xl'>
-                <p>Rokas</p>
-                <p>Rokas</p>
-                <p>Rokas</p>
-                <p>Rokas</p>
-                <p>Rokas</p>
-                <p>Rokas</p>
-                <p>Rokas</p>
-                <p>Rokas</p>
-                <p>Rokas</p>
-                <p>Rokas</p>
-                <p>Rokas</p>
-                <p>Rokas</p>
-                <p>Rokas</p>
-                <p>Rokas</p>
                 <table className='w-full'>
                     <CMCtableHeader />
 

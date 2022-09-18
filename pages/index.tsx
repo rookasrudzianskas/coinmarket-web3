@@ -1,10 +1,10 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-import CMCtable from '../components/cmc-table/CmcTable'
 import Header from '../components/Header'
 import Trending from '../components/Trending'
 import SwapCryptoModal from '../components/SwapCryptoModal'
+import CMCtable from '../components/cmc-table/CMCtable';
 
 const Home: NextPage = () => {
   return (
