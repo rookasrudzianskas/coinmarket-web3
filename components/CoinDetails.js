@@ -192,7 +192,7 @@ const CoinDetails = ({ coinName, coinSymbol, price }) => {
                         </div>
                     </div>
 
-                    <div className='-ml-16'>
+                    <div className='ml-16'>
                         <div className={styles.coinRates}>
                             <div>
                                 <p className='text-gray-400'>
