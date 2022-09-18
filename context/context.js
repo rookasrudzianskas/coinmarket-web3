@@ -67,7 +67,11 @@ export const CoinMarketProvider = ({ children }) => {
             if (fromToken === 'ETH') {
                 if (!isAuthenticated) return
                 await Moralis.enableWeb3()
+                // this will get contract by it is name
                 const contractAddress = getToAddress()
+                // this will get Abi of the contract
+                // what is an abi?
+                // https://ethereum.stackexchange.com/questions/383/what-is-an-abi-and-why-is-it-important
                 const abi = getToAbi()
 
                 let options = {
@@ -126,7 +130,8 @@ export const CoinMarketProvider = ({ children }) => {
 
     //Send eth function
     const sendEth = async () => {
-        if (!isAuthenticated) return
+        if (!isAuthenticated) return;
+        // this will get contract by it is name
         const contractAddress = getToAddress()
 
         let options = {
