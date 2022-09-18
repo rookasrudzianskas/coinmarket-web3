@@ -125,4 +125,4 @@ const CMCTableRow = ({
     )
 }
 
-export default CMCTableRow
+export default CMCTableRow;
