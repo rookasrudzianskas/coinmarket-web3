@@ -4,7 +4,7 @@ import { CoinMarketContext } from '../../context/context'
 import CMCTableRow from './CMCTableRow';
 import CMCTableHeader from './CMCTableHeader';
 
-const CMCtable = () => {
+const CMCTable = () => {
     let { getTopTenCoins } = useContext(CoinMarketContext)
     let [coinData, setCoinData] = useState(null)
 
@@ -64,4 +64,4 @@ const CMCtable = () => {
     )
 }
 
-export default CMCtable;
+export default CMCTable;
