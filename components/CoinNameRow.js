@@ -1,11 +1,11 @@
 import React from 'react';
 
-const CMCtableRow = () => {
+const CoinNameRow = () => {
     return (
         <div>
-
+            
         </div>
     );
 };
 
-export default CMCtableRow;
+export default CoinNameRow;
