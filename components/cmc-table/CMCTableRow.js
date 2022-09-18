@@ -44,7 +44,7 @@ const CMCTableRow = ({
         return graphImages[rndInt]
     }
 
-    const router = useRouter()
+    const router = useRouter();
 
     const viewCoinDetails = () => {
         router.push(
