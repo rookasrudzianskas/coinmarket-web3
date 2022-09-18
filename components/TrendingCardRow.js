@@ -1,4 +1,4 @@
-import Rate from './cmc-table/rate'
+import Rate from './cmc-table/Rate';
 import Image from 'next/image'
 
 const styles = {

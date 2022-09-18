@@ -5,7 +5,7 @@ const styles = {
     textIcon: `flex items-center`
 }
 
-const CMCtableHeader = () => {
+const CMCTableHeader = () => {
     return (
         <tbody>
         <tr>
@@ -24,4 +24,4 @@ const CMCtableHeader = () => {
     )
 }
 
-export default CMCtableHeader
+export default CMCTableHeader
