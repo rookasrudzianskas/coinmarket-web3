@@ -2,16 +2,16 @@ import { createContext, useState, useEffect } from 'react'
 import { useMoralis } from 'react-moralis'
 
 import { useMoralisQuery } from 'react-moralis'
-// import {
-//     dogeAbi,
-//     daiAbi,
-//     linkAbi,
-//     usdcAbi,
-//     dogeAddress,
-//     linkAddress,
-//     daiAddress,
-//     usdcAddress,
-// } from '../lib/constants'
+import {
+    dogeAbi,
+    daiAbi,
+    linkAbi,
+    usdcAbi,
+    dogeAddress,
+    linkAddress,
+    daiAddress,
+    usdcAddress,
+} from '../lib/constants'
 
 export const CoinMarketContext = createContext()
 
@@ -36,26 +36,26 @@ export const CoinMarketProvider = ({ children }) => {
         }
     }, [isAuthenticated])
 
-    // const getContractAddress = () => {
-    //     if (fromToken === 'Dai') return daiAddress
-    //     if (fromToken === 'Dogecoin') return dogeAddress
-    //     if (fromToken === 'Link') return linkAddress
-    //     if (fromToken === 'usdc') return usdcAddress
-    // }
-    //
-    // const getToAddress = () => {
-    //     if (toToken === 'Dai') return daiAddress
-    //     if (toToken === 'Dogecoin') return dogeAddress
-    //     if (toToken === 'Link') return linkAddress
-    //     if (toToken === 'Usdc') return usdcAddress
-    // }
-    //
-    // const getToAbi = () => {
-    //     if (toToken === 'Dai') return daiAbi
-    //     if (toToken === 'Dogecoin') return dogeAbi
-    //     if (toToken === 'Link') return linkAbi
-    //     if (toToken === 'Usdc') return usdcAbi
-    // }
+    const getContractAddress = () => {
+        if (fromToken === 'Dai') return daiAddress
+        if (fromToken === 'Dogecoin') return dogeAddress
+        if (fromToken === 'Link') return linkAddress
+        if (fromToken === 'usdc') return usdcAddress
+    }
+
+    const getToAddress = () => {
+        if (toToken === 'Dai') return daiAddress
+        if (toToken === 'Dogecoin') return dogeAddress
+        if (toToken === 'Link') return linkAddress
+        if (toToken === 'Usdc') return usdcAddress
+    }
+
+    const getToAbi = () => {
+        if (toToken === 'Dai') return daiAbi
+        if (toToken === 'Dogecoin') return dogeAbi
+        if (toToken === 'Link') return linkAbi
+        if (toToken === 'Usdc') return usdcAbi
+    }
 
     const openModal = () => {
         setOpenBuyCryptoModal(true)
