@@ -118,14 +118,14 @@ export const CoinMarketProvider = ({ children }) => {
                     amount: Moralis.Units.Token(amount, '18'),
                 },
             }
-            let fromTransaction = await Moralis.transfer(fromOptions)
-            let toMintTransaction = await Moralis.executeFunction(toMintOptions)
-            let fromReceipt = await fromTransaction.wait()
-            let toReceipt = await toMintTransaction.wait()
-            console.log(fromReceipt)
-            console.log(toReceipt)
+            let fromTransaction = await Moralis.transfer(fromOptions);
+            let toMintTransaction = await Moralis.executeFunction(toMintOptions);
+            let fromReceipt = await fromTransaction.wait();
+            let toReceipt = await toMintTransaction.wait();
+            console.log(fromReceipt);
+            console.log(toReceipt);
         } catch (error) {
-            console.error(error.message)
+            console.error(error.message);
         }
     }
 
