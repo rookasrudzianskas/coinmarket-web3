@@ -9,8 +9,8 @@ const CMCtable = () => {
     let [coinData, setCoinData] = useState(null)
 
     useEffect(() => {
-        setData()
-    }, [])
+        setData();
+    }, []);
 
     const setData = useCallback(async () => {
         try {
